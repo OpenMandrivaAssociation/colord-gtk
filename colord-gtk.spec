@@ -21,6 +21,7 @@ BuildRequires:	gobject-introspection-devel
 BuildRequires:	vala-tools
 BuildRequires:	gtk+3-devel
 BuildRequires:	gtk-doc
+BuildRequires:	pkgconfig(dbus-1)
 Requires:	%{libname} = %{EVRD}
 Requires:	%{girname} = %{EVRD}
 
