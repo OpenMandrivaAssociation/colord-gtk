@@ -29,6 +29,7 @@ colord-gtk is a support library for colord and provides additional
 functionality that requires GTK+.
 
 %package -n %{libname}
+Summary:	GTK support library for colord
 
 %description
 colord-gtk is a support library for colord and provides additional
