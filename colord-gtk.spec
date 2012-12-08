@@ -84,3 +84,10 @@ Files for development with %{name}.
 %{_includedir}/colord-%{major}/%{name}*
 %{_libdir}/lib%{name}.so
 %{_libdir}/pkgconfig/%{name}.pc
+
+
+%changelog
+* Wed Sep 26 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.1.23-1
++ Revision: 817628
+- imported package colord-gtk
+
