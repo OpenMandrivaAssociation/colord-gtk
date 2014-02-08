@@ -7,7 +7,7 @@
 Name:		colord-gtk
 Summary:	GTK support library for colord
 Version:	0.1.24
-Release:	2
+Release:	3
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://
