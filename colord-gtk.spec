@@ -1,10 +1,10 @@
-%define major		1
-%define gi_major	1.0
-%define libname		%mklibname colord-gtk %major
-%define develname	%mklibname -d colord-gtk
-%define girname		%mklibname colord-gtk-gir %gi_major
+%define major 1
+%define gi_major 1.0
+%define libname %mklibname colord-gtk %major
+%define develname %mklibname -d colord-gtk
+%define girname %mklibname colord-gtk-gir %gi_major
 
-%define url_ver	%(echo %{version}|cut -d. -f1,2)
+%define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		colord-gtk
 Version:	0.1.25
@@ -73,7 +73,10 @@ GObject Introspection interface description for %{name}.
 %apply_patches
 
 %build
-%configure2_5x --disable-static --enable-vala
+%configure \
+		--disable-static \
+        --enable-vala
+
 %make
 
 %install
