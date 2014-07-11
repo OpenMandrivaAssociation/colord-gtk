@@ -8,7 +8,7 @@
 
 Name:		colord-gtk
 Version:	0.1.25
-Release:	6
+Release:	7
 Summary:	Library for the colord-gtk protocol
 Group:		System/Libraries
 License:	LGPLv2+
