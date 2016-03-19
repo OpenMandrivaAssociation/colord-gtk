@@ -1,4 +1,2 @@
-removed_sources:
-  colord-gtk-0.1.24.tar.xz: 6711d50d45150e54ebcfcd8d242b6a0d83ac73c2
 sources:
-  colord-gtk-0.1.25.tar.xz: ffb27568ff25860fbcc09cc32ba05469655b099d
+  colord-gtk-0.1.26.tar.xz: 60b85227d93758a66f5dc30d0a98f8f58415103d

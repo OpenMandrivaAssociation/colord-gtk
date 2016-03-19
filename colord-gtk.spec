@@ -7,8 +7,8 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		colord-gtk
-Version:	0.1.25
-Release:	10
+Version:	0.1.26
+Release:	1
 Summary:	Library for the colord-gtk protocol
 Group:		System/Libraries
 License:	LGPLv2+
@@ -74,8 +74,8 @@ GObject Introspection interface description for %{name}.
 
 %build
 %configure \
-		--disable-static \
-        --enable-vala
+	--disable-static \
+	--enable-vala
 
 %make
 
