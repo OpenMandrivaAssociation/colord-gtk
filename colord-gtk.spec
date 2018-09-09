@@ -8,7 +8,7 @@
 
 Name:		colord-gtk
 Version:	0.1.26
-Release:	2
+Release:	3
 Summary:	Library for the colord-gtk protocol
 Group:		System/Libraries
 License:	LGPLv2+
@@ -90,7 +90,9 @@ find %{buildroot} -name '*.la' -delete
 %files i18n -f colord-gtk.lang
 
 %files -n %{libname}
+%{_bindir}/cd-convert
 %{_libdir}/lib%{name}.so.%{major}*
+%{_mandir}/man1/cd-convert.1.*
 
 %files -n %{develname}
 %{_includedir}/*
@@ -101,3 +103,4 @@ find %{buildroot} -name '*.la' -delete
 
 %files -n %{girname}
 %{_libdir}/girepository-1.0/ColordGtk-%{gi_major}.typelib
+%exclude /usr/lib/debug/usr/bin/cd-convert-0.1.26-2.x86_64.debug
