@@ -27,6 +27,7 @@ BuildRequires:	gtk-doc
 BuildRequires:	intltool
 BuildRequires:	vala-tools
 BuildRequires:	meson
+BuildRequires:	docbook5-style-xsl
 
 %description
 colord-gtk is a support library for colord and provides additional
