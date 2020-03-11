@@ -7,8 +7,8 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		colord-gtk
-Version:	0.1.26
-Release:	4
+Version:	0.2.0
+Release:	1
 Summary:	Library for the colord-gtk protocol
 Group:		System/Libraries
 License:	LGPLv2+
@@ -26,6 +26,7 @@ BuildRequires:	gobject-introspection-devel
 BuildRequires:	gtk-doc
 BuildRequires:	intltool
 BuildRequires:	vala-tools
+BuildRequires:	meson
 
 %description
 colord-gtk is a support library for colord and provides additional
@@ -72,15 +73,12 @@ GObject Introspection interface description for %{name}.
 %setup -q
 %autopatch -p1
 
-%build
-%configure \
-	--disable-static \
-	--enable-vala
-
-%make
+%%build
+%meson -Ddocs=true -Dgtk2=false -Dman=true -Dtests=false -Dvapi=true
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 #Remove libtool archives.
 find %{buildroot} -name '*.la' -delete
