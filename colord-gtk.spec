@@ -94,11 +94,13 @@ find %{buildroot} -name '*.la' -delete
 %{_mandir}/man1/cd-convert.1.*
 
 %files -n %{develname}
+%doc %{_datadir}/gtk-doc/html/colord-gtk
 %{_includedir}/*
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/%{name}.pc
 %{_datadir}/gir-1.0/ColordGtk-%{gi_major}.gir
 %{_datadir}/vala/vapi/colord-gtk.vapi
+%{_datadir}/vala/vapi/colord-gtk.deps
 
 %files -n %{girname}
 %{_libdir}/girepository-1.0/ColordGtk-%{gi_major}.typelib
