@@ -7,8 +7,8 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		colord-gtk
-Version:	0.2.0
-Release:	4
+Version:	0.3.0
+Release:	1
 Summary:	Library for the colord-gtk protocol
 Group:		System/Libraries
 License:	LGPLv2+
