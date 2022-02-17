@@ -19,6 +19,7 @@ BuildRequires:	pkgconfig(gthread-2.0)
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(glib-2.0) >= 2.19.0
 BuildRequires:	pkgconfig(gtk+-3.0)
+BuildRequires:  pkgconfig(gtk4)
 BuildRequires:	pkgconfig(colord)
 BuildRequires:	pkgconfig(lcms2) >= 2.2
 BuildRequires:	dbus-glib-devel
