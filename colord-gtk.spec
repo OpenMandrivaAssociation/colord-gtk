@@ -92,6 +92,7 @@ find %{buildroot} -name '*.la' -delete
 %files -n %{libname}
 %{_bindir}/cd-convert
 %{_libdir}/lib%{name}.so.%{major}*
+%{_libdir}/libcolord-gtk4.so.%{major}*
 %{_mandir}/man1/cd-convert.1.*
 
 %files -n %{develname}
@@ -99,6 +100,7 @@ find %{buildroot} -name '*.la' -delete
 %{_includedir}/*
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/%{name}.pc
+%{_libdir}/pkgconfig/colord-gtk4.pc
 %{_datadir}/gir-1.0/ColordGtk-%{gi_major}.gir
 %{_datadir}/vala/vapi/colord-gtk.vapi
 %{_datadir}/vala/vapi/colord-gtk.deps
