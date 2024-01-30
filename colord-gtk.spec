@@ -7,13 +7,13 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		colord-gtk
-Version:	0.3.0
-Release:	6
+Version:	0.3.1
+Release:	1
 Summary:	Library for the colord-gtk protocol
 Group:		System/Libraries
 License:	LGPLv2+
-URL:		http://www.freedesktop.org/software/colord/
-Source0:	http://www.freedesktop.org/software/colord/releases/%{name}-%{version}.tar.xz
+URL:		https://www.freedesktop.org/software/colord/
+Source0:	https://www.freedesktop.org/software/colord/releases/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(gio-2.0) >= 2.17.3
 BuildRequires:	pkgconfig(gthread-2.0)
 BuildRequires:	pkgconfig(libxml-2.0)
