@@ -72,10 +72,9 @@ Requires:	%{libname} = %{version}-%{release}
 GObject Introspection interface description for %{name}.
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
-%%build
+%build
 %meson -Ddocs=true -Dgtk2=false -Dman=true -Dtests=false -Dvapi=true
 %meson_build
 
